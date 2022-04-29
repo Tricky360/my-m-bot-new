@@ -1,0 +1,6 @@
+pyrogram
+pytelegrambotapi
+requests
+flask
+pymongo
+pymongo[srv]
