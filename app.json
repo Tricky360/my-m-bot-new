@@ -11,23 +11,19 @@
   "env": {
     "BOT_TOKEN": {
       "description": "Your bot token from @botfather",
-      "value": "",
-      "required": false
+      "value": ""
     },
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "",
-      "required": false
+      "value": ""
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "",
-      "required": false
+      "value": ""
     },
     "MDISK_API": {
       "description": "Enter your MDISK API KEY only if METHOD is selected to mdisk. Get your API_ID from t.me/VideoToolMoneyTreebot",
-      "value": "0",
-      "required": false
+      "value": "0"
     },
     "CHANNELS": {
       "description": "Enter True if you want the bot to work in Channels also else Leave it as it is",
@@ -46,8 +42,7 @@
     },
     "ADMINS": {
       "description": "Your Telegram ID and ID of Users you want add as Admin. Separate each ID by comma.",
-      "value": "",
-      "required": false
+      "value": ""
     }
   },
   "addons": [],
