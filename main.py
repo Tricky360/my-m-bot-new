@@ -24,9 +24,6 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-# #add
-# server = Flask(__name__)
-# #add
 
 
 @bot.on_message(filters.command('api'))
@@ -72,4 +69,4 @@ def allmsg(Client, message):
 
 
 if __name__ == "__main__":
-    bot.run(debug=True)
+    bot.run()
