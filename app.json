@@ -1,0 +1,60 @@
+{
+  "name": "Mdisk Convertor",
+  "description": "Convert Others Mdisk Lnk to Yours using Mdisk API key",
+  "logo": "https://i.ibb.co/XFcL3f4/unnamed.webp",
+  "keywords": [
+    "telegram",
+    "shortener"
+  ],
+  "website": "https://github.com/T2links/",
+  "repository": "https://github.com/T2links/",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your bot token from @botfather",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "MDISK_API": {
+      "description": "Enter your MDISK API KEY only if METHOD is selected to mdisk. Get your API_ID from t.me/VideoToolMoneyTreebot",
+      "value": "0"
+    },
+    "CHANNELS": {
+      "description": "Enter True if you want the bot to work in Channels also else Leave it as it is",
+      "value": "",
+      "required": false
+    },
+    "CHANNEL_ID": {
+      "description": "Enter your Channel ID, Leave this to deafault if CHANNELS set to False",
+      "value": "",
+      "required": false
+    },
+    "FORWARD_MESSAGE": {
+      "description": "Enter True if you want to edit forwarded message also in your channel. Entering True will delete the forwarded post in your channel and repost it with shorten link. Leave this to deafault if CHANNELS set to False",
+      "value": "",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "Your Telegram ID and ID of Users you want add as Admin. Separate each ID by comma.",
+      "value": ""
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
