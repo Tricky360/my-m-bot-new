@@ -77,7 +77,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://premium-m-disk.herokuapp.com/' + TOKEN)
+    bot.set_webhook(url='https://best-shanu-m-bot.herokuapp.com/' + TOKEN)
     return "!", 200
 
 
