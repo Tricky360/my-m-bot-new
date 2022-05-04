@@ -67,6 +67,4 @@ def allmsg(Client, message):
         print('can not understand')
 
 
-
-if __name__ == "__main__":
-    bot.run()
+bot.run()
