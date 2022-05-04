@@ -24,6 +24,10 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
+#add
+server = Flask(__name__)
+#add
+
 @bot.on_message(filters.command('api'))
 def add_api(c, m):
     print(m)
@@ -62,4 +66,20 @@ def allmsg(Client, message):
     else:
         print('can not understand')
 
-bot.run()
+@server.route('/' + TOKEN, methods=['POST'])
+def getMessage():
+    json_string = request.get_data().decode('utf-8')
+    update = telebot.types.Update.de_json(json_string)
+    bot.process_new_updates([update])
+    return "!", 200
+
+
+@server.route("/")
+def webhook():
+    bot.remove_webhook()
+    bot.set_webhook(url='https://premium-m-disk.herokuapp.com/' + TOKEN)
+    return "!", 200
+
+
+if __name__ == "__main__":
+    server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
