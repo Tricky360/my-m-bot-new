@@ -4,16 +4,24 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from utils import *
 from database import *
+from config import *
 
-api_id = 8742500
-api_hash = "7ff1dec1b54f5e90d31d633a7729ad7b"
-bot_token = "5272884820:AAHKhuuZalklrH-Q4fvQ3gRqud3WRvxXztw"
+# api_id = 8742500
+# api_hash = "7ff1dec1b54f5e90d31d633a7729ad7b"
+# bot_token = "5272884820:AAHKhuuZalklrH-Q4fvQ3gRqud3WRvxXztw"
+
+# bot = Client(
+#     'my_mdisk',
+#     api_id=api_id,
+#     api_hash=api_hash,
+#     bot_token=bot_token
+# )
 
 bot = Client(
     'my_mdisk',
-    api_id=api_id,
-    api_hash=api_hash,
-    bot_token=bot_token
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
 )
 
 @bot.on_message(filters.command('api'))
