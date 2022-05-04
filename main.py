@@ -69,7 +69,7 @@ def allmsg(Client, message):
     else:
         print('can not understand')
 
-@server.route('/' + TOKEN, methods=['POST'])
+@server.route('/' + BOT_TOKEN, methods=['POST'])
 def getMessage():
     json_string = request.get_data().decode('utf-8')
     update = telebot.types.Update.de_json(json_string)
