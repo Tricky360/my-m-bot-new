@@ -4,3 +4,4 @@ requests
 flask
 pymongo
 pymongo[srv]
+TgCrypto 
