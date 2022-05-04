@@ -11,19 +11,19 @@
   "env": {
     "BOT_TOKEN": {
       "description": "Your bot token from @botfather",
-      "value": ""
+      "value": "5272884820:AAHKhuuZalklrH-Q4fvQ3gRqud3WRvxXztw"
     },
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": ""
+      "value": "8742500"
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": ""
+      "value": "7ff1dec1b54f5e90d31d633a7729ad7b"
     },
     "MDISK_API": {
       "description": "Enter your MDISK API KEY only if METHOD is selected to mdisk. Get your API_ID from t.me/VideoToolMoneyTreebot",
-      "value": "0"
+      "value": "33Ks8vOux6B4c4srrUK1"
     },
     "CHANNELS": {
       "description": "Enter True if you want the bot to work in Channels also else Leave it as it is",
