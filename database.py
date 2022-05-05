@@ -16,6 +16,7 @@ class Db:
 
     @classmethod
     def my_data(cls, msg):
+        print("-------->", msg)
         user_id = str(msg['chat']['id'])
         user_name = msg['chat']['first_name']
         join_date = msg['date']
