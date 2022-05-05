@@ -40,7 +40,7 @@ def add_api(c, m):
 
 
 @bot.on_message()
-def allmsg(Client, message):
+def allmsg(Client, message: Message):
     user_id = str(message.chat.id)
     if (message.text and not message.reply_markup):  # Text
         print('Text Message')
