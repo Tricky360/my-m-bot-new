@@ -45,7 +45,7 @@ def allmsg(Client, message: Message):
     if (message.text and not message.reply_markup):  # Text
         print('Text Message')
         print(message)
-        Db.my_data(message)
+#         Db.my_data(message)
         txt = message.text
         ent = caption_ent(message.entities)
 
