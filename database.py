@@ -1,4 +1,5 @@
 import json
+import requests
 from datetime import datetime
 from datetime import timedelta
 from pymongo import MongoClient
